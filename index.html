@@ -142,12 +142,17 @@
             completá el formulario y nos pondremos en contacto con vos a la brevedad.
           </p>
 
-          <form class="contact-form">
-            <input type="text" placeholder="Nombre" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Consulta" rows="5" required></textarea>
+          <form action="https://formsubmit.co/mauricio.e.rodriguez94@gmail.com" method="POST">
+            <input type="text" name="Nombre" required placeholder="Tu Nombre">
+            <input type="email" name="Correo" required placeholder="Tu Correo">
+            <textarea name="Mensaje" required placeholder="Tu Mensaje..."></textarea>
+        
+            <input type="hidden" name="_next" value="https://[nombredeusuario].github.io/[nombre-del-repo]/gracias.html">
+        
+            <input type="hidden" name="_subject" value="¡NUEVA CONSULTA DESDE PINTURASUR!">
+        
             <button type="submit" class="btn-cta">Enviar Mensaje</button>
-          </form>
+        </form>
         </div>
 
         <div class="contact-image">
