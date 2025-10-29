@@ -142,16 +142,20 @@
             completá el formulario y nos pondremos en contacto con vos a la brevedad.
           </p>
 
-          <form action="https://formspree.io/f/mauricio.e.rodriguez94@gmail.com" method="POST">
-            <input type="text" name="nombre" required placeholder="Tu Nombre">
-            <input type="email" name="correo" required placeholder="Tu Correo">
-            <textarea name="mensaje" required placeholder="Tu Mensaje..."></textarea>
-            
-            <input type="hidden" name="_next" value="https://[nombredeusuario].github.io/[nombre-del-repo]/gracias.html" />
-            <input type="hidden" name="_subject" value="¡NUEVA CONSULTA (Formspree) DESDE PINTURASUR!" />
-            
-            <button type="submit" class="btn-cta">Enviar Mensaje</button>
-        </form>
+          <form 
+          action="https://formspree.io/f/tu.email@gmail.com" 
+          method="POST" 
+          id="contact-form">
+          
+          <input type="text" name="nombre" required placeholder="Tu Nombre">
+          <input type="email" name="correo" required placeholder="Tu Correo">
+          <textarea name="mensaje" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+          
+          <input type="hidden" name="_subject" value="¡NUEVA CONSULTA DE PINTURASUR!" />
+          <input type="hidden" name="_next" value="https://mauricioe94.github.io/pintura-sur/" /> 
+          
+          <button type="submit" class="btn-cta">Solicitar Presupuesto</button>
+      </form>
         </div>
 
         <div class="contact-image">
