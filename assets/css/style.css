@@ -490,6 +490,144 @@ nav a:hover {
   }
 }
 
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: 80px 0;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+}
+
+.contact .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-text {
+  flex: 1 1 500px;
+}
+
+.contact-text span {
+  color: #114fd8;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-text h2 {
+  font-size: 32px;
+  color: #114fd8;
+  margin: 10px 0;
+}
+
+.contact-text p {
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* ===== FORM STYLING ===== */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #114fd8;
+  box-shadow: 0 0 8px rgba(17, 79, 216, 0.15);
+  outline: none;
+}
+
+#contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* ===== BUTTON ===== */
+#contact-form button {
+  background: #FF7043;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contact-form button:hover {
+  background: #ff5722;
+  transform: scale(1.03);
+}
+
+#contact-form button:active {
+  transform: scale(0.97);
+}
+
+/* ===== IMAGE ===== */
+.contact-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .contact-image img {
+    max-width: 100%;
+  }
+
+  #contact-form {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+
 /* ========================================================== ⚫ FOOTER ========================================================== */
 .footer {
   background-color: #0a174e;
